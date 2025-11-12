@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import Spline from '@splinetool/react-spline'
 import { GraduationCap, BookOpen, Users, Compass, ArrowRight, CalendarDays, Sparkles } from 'lucide-react'
+import ParallaxShowcase from './components/ParallaxShowcase'
 
 function Navbar() {
   const [scrolled, setScrolled] = useState(false)
@@ -235,6 +236,7 @@ export default function App() {
     <div className="min-h-screen bg-white text-slate-900">
       <Navbar />
       <Hero />
+      <ParallaxShowcase />
       <Programs />
       <Campus />
       <Admissions />

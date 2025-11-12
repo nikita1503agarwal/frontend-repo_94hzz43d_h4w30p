@@ -22,7 +22,24 @@
   }
 }
 
-/* Custom utility classes for shadcn/ui patterns */
+/* Custom keyframes for 3D vibes */
+@keyframes floatY {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-18px); }
+}
+@keyframes floatX {
+  0%, 100% { transform: translateX(0px); }
+  50% { transform: translateX(16px); }
+}
+@keyframes spinY {
+  0% { transform: rotateY(0deg); }
+  100% { transform: rotateY(360deg); }
+}
+@keyframes pulseGlow {
+  0%, 100% { box-shadow: 0 0 0 0 rgba(99,102,241,0.25); }
+  50% { box-shadow: 0 10px 40px 0 rgba(99,102,241,0.35); }
+}
+
 @layer utilities {
   .animate-in {
     animation-name: animateIn;
